@@ -7,6 +7,8 @@ import { supabase } from '@/lib/supabase'
 import { Profile } from '@/lib/types'
 import ImageUpload from '@/components/admin/ImageUpload'
 
+export const dynamic = 'force-dynamic'
+
 export default function SettingsAdmin() {
     const [loading, setLoading] = useState(true)
     const [saving, setSaving] = useState(false)

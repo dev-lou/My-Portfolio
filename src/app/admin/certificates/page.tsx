@@ -7,6 +7,8 @@ import { supabase } from '@/lib/supabase'
 import { Certificate } from '@/lib/types'
 import ImageUpload from '@/components/admin/ImageUpload'
 
+export const dynamic = 'force-dynamic'
+
 export default function CertificatesAdmin() {
     const [certificates, setCertificates] = useState<Certificate[]>([])
     const [loading, setLoading] = useState(true)

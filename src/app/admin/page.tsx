@@ -6,6 +6,8 @@ import { FolderKanban, Award, Layers, TrendingUp, Clock, Plus } from 'lucide-rea
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+
 interface Stats {
     projects: number
     certificates: number

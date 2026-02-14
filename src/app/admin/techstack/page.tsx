@@ -7,6 +7,8 @@ import { supabase } from '@/lib/supabase'
 import { TechStack } from '@/lib/types'
 import ImageUpload from '@/components/admin/ImageUpload'
 
+export const dynamic = 'force-dynamic'
+
 const categories = [
     { value: 'frontend', label: 'Frontend' },
     { value: 'backend', label: 'Backend' },

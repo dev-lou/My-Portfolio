@@ -7,6 +7,8 @@ import { supabase, BUCKET_NAME } from '@/lib/supabase'
 import { Project } from '@/lib/types'
 import ImageUpload from '@/components/admin/ImageUpload'
 
+export const dynamic = 'force-dynamic'
+
 const categories = [
     { value: 'website', label: 'Website' },
     { value: 'mobile', label: 'Mobile App' },
