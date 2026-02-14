@@ -104,7 +104,7 @@ export default function WebProjects() {
 
     // Moved out of JSX to comply with hooks rules
     // Extended scroll to ensure all 6 cards are fully visible before unpinning
-    const horizontalX = useTransform(scrollYProgress, [0, 1], ['0%', '-75%'])
+    const horizontalX = useTransform(scrollYProgress, [0, 1], ['0%', '-85%'])
     const progressWidth = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
 
     useEffect(() => {
@@ -132,7 +132,7 @@ export default function WebProjects() {
         <section
             ref={sectionRef}
             id="web-projects"
-            className="relative min-h-[500vh]"
+            className="relative min-h-[600vh]"
         >
             {/* Sticky container */}
             <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
